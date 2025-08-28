@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d27ovo3bwbr8o"]
+
+[ext_resource type="Texture2D" uid="uid://cje50vxjak47u" path="res://asset_packs/Eclipse/tiles.png" id="1_fpjvg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fpjvg"]
+size = Vector2(32, 16)
+
+[node name="platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fpjvg")
+region_enabled = true
+region_rect = Rect2(175.74, 15.9354, 32.2113, 16.7034)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fpjvg")
